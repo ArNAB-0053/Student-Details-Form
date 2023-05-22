@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forms</title>
+
+  <!-- Include Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Goldman&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poltawski+Nowy:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  
+</head>
+
+<header>
+  <p class="text-blue-500"></p>
+</header>
+
+<body>
+  <div class="text-box bg-white shadow-md rounded-md p-6 mx-auto">
+    <h1 class="text-blue-500">STUDENT PROFILE</h1><br><br><br>
+
+    <form id="StudentDetails">
+      <div class="alert">Your message sent</div>
+      <div class="container-form">
+        <div class="error-alert hidden"></div>
+      </div>
+
+      <h3>Enter your name <br>
+        <input type="text" id="name" class="w-full h-12 text-lg px-4 rounded-md shadow-inner">
+      </h3><br>
+
+      <h3>Enter your student code <br>
+        <input type="text" id="stdCode" class="w-full h-12 text-lg px-4 rounded-md shadow-inner">
+      </h3><br>
+
+      <h3>Semester <br>
+        <input type="text" id="sem" class="w-full h-12 text-lg px-4 rounded-md shadow-inner">
+      </h3><br>
+
+      <h3>Batch <br>
+        <input type="text" id="batch" class="w-full h-12 text-lg px-4 rounded-md shadow-inner">
+      </h3><br>
+
+      <h3>Choose your profile picture <br>
+        <div class="img-container">
+          <div class="img-profile-container">
+            <img class="img-profile" src="Images/blank.png" alt="blank-profile" id="profile-pic">
+            <label for="input-file">UPLOAD IMAGE</label>
+            <input type="file" accept="image/jpg, image/png, image/jpeg" id="input-file">
+          </div>
+        </div>
+      </h3><br>
+
+      <div class="button">
+        <button type="submit" class="mx-auto">SUBMIT</button>
+      </div><br>
+    </form>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+
+<footer>
+  <p>copyright&copy;Arnab-2023</p>
+</footer>
+
+</html>
