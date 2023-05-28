@@ -1,7 +1,7 @@
 const firebaseConfig = {
-    // Copy details from it
-    firebaseConfigDetails.txt
-  };
+  // Copy from here
+  firebaseConfigDetails.txt
+};
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
